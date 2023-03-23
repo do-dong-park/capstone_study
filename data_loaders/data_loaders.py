@@ -1,6 +1,6 @@
 from base import BaseDataLoader
 from data_loaders import data_handler
-from sklearn.datasets import load_iris, load_boston
+from sklearn.datasets import load_iris, fetch_california_housing
 from sklearn.model_selection import train_test_split
 
 
@@ -20,7 +20,7 @@ class Regression(BaseDataLoader):
     def __init__(self, data_path, shuffle, test_split, random_state, stratify, training):
         '''set data_path in configs if data localy stored'''
 
-        X, y = load_boston(return_X_y=True)
+        X, y = fetch_california_housing(return_X_y=True)
         X_train, X_test, y_train, y_test = train_test_split(X, y,
                                                             test_size=0.2,
                                                             random_state=1,
