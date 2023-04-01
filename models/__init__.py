@@ -7,8 +7,6 @@ from sklearn.decomposition import PCA
 from sklearn.preprocessing import StandardScaler
 from sklearn.preprocessing import PolynomialFeatures
 from sklearn.linear_model import Ridge
-from sklearn.cross_decomposition import PLSRegression
-from sklearn.dummy import DummyRegressor
 
 methods_dict = {
     'ridge': Ridge,

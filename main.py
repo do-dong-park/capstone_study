@@ -9,7 +9,7 @@ import optimizers.optimizers as optimizers_
 import sklearn.model_selection as model_selection_
 
 
-def main(config):
+def main():
 
     data_loader = config.init_obj('data_loader', data_loaders_, **{'training':True})
     model = config.init_obj('model', models_).created_model()
