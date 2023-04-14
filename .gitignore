@@ -201,6 +201,8 @@ cython_debug/
  *.iml
  *.ipr
  *.csv
+ *.xlsx
+ example/dataset/
 # CMake
 cmake-build-*/
 
